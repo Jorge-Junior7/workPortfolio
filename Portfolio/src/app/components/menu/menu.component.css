@@ -1,0 +1,103 @@
+/* Estilos globais */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+*{
+  list-style: none;
+}
+/* Estilos para o cabeçalho fixo */
+header {
+  background-color: #0e0d0d;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Estilos para o logo */
+#header .logo a {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: .5rem 1rem;
+}
+
+/* Estilos para o menu */
+#menu {
+  display: flex;
+  gap: 7rem;
+}
+
+#menu a {
+  display: block;
+  padding: .5rem;
+  transition: .3s;
+}
+
+#menu a:hover {
+  transform: scale(1.2);
+  color: rgb(71, 174, 59);
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #0e0d0d;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: .6s;
+  }
+
+  #menu.ativo {
+    visibility: visible;
+    height: calc(100vh - 80px);
+  }
+
+  #menu.ativo a {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  #nav span {
+    border-top: 2px solid;
+    width: 25px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+  }
+
+  #nav span::before,
+  #nav span::after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    transition: .3s;
+    margin-top: 5px;
+    position: relative;
+  }
+
+  #nav span.ativo {
+    border-top: transparent;
+  }
+
+  #nav span.ativo::before {
+    transform: rotate(135deg);
+  }
+
+  #nav span.ativo::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
