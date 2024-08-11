@@ -1,0 +1,29 @@
+footer {
+  background: #0e0d0d;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+}
+footer ul li a:hover {
+  color: rgb(71, 174, 59);
+}
