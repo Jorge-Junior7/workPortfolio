@@ -1,0 +1,100 @@
+/* Remova o padding universal se não for necessário */
+* {
+  color: black;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; /* Ajuste conforme necessário */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px; /* Ajuste conforme necessário */
+}
+
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 20px;
+}
+
+.text-content {
+  margin-top: 20px;
+}
+
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background: #0e0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.socialContainer:hover {
+  background-color: #d62976;
+}
+
+.containerTwo:hover {
+  background-color: #D44638;
+}
+
+.containerThree:hover {
+  background-color: #0072b1;
+}
+
+.containerFour:hover {
+  background-color: #128C7E;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+.container__image {
+  display: flex;
+  margin-right: 20px; /* Ajuste conforme necessário */
+}
+
+.my-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
