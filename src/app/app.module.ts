@@ -7,9 +7,9 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -19,9 +19,9 @@ import { HomeComponent } from './pages/home/home.component';
     SkillsComponent,
     MenuComponent,
     ServicesComponent,
-    ContactComponent,
     FooterComponent,
     HomeComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,21 +1,21 @@
 /* Remova o padding universal se não for necessário */
-* {
-  color: black;
-
-}
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px; /* Ajuste conforme necessário */
+  padding: 90px; /* Ajuste conforme necessário */
+  background-color: #0b2a3b;
+
 }
 
-.content {
+.container__header {
   display: flex;
   flex-direction: column;
   padding: 25px; /* Ajuste conforme necessário */
 }
+
+
 
 .card {
   width: fit-content;
@@ -27,13 +27,11 @@ header {
   gap: 20px;
 }
 
-.text-content {
-  margin-top: 20px;
-}
+
 
 .socialContainer {
-  width: 52px;
-  height: 52px;
+  width: 57px;
+  height: 57px;
   background: #0e0d0d;
   display: flex;
   align-items: center;
@@ -42,20 +40,24 @@ header {
   transition: background-color 0.3s;
 }
 
-.socialContainer:hover {
+.instagram:hover {
   background-color: #d62976;
 }
 
-.containerTwo:hover {
+.gmail:hover {
   background-color: #D44638;
 }
 
-.containerThree:hover {
+.linkedin:hover {
   background-color: #0072b1;
 }
 
-.containerFour:hover {
+.whatsapp:hover {
   background-color: #128C7E;
+}
+
+.text-content{
+  font-size: 19px;
 }
 
 .socialContainer:active {
@@ -86,6 +88,34 @@ header {
   border-radius: 50%;
   object-fit: cover;
 }
+
+
+
+body{
+  background-color: #1C1C1C;
+  padding: 150px;
+  margin: 0;
+  padding: 50px;
+}
+
+body > h1 {
+  text-align: center;
+  font-size: 50px;
+  
+}
+
+.card__body {
+  font: 10px;
+  display: flex;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 20px; /* Define o espaço entre os elementos */
+  box-sizing: border-box;
+}
+
+
+
+
 
 @keyframes slide-in-top {
   0% {
